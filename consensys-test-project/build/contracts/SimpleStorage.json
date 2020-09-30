@@ -32,15 +32,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/rodrigo/Documents/truffle-projects/consensys-test-project/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/rodrigo/Documents/truffle-projects/consensys-test-project/contracts/SimpleStorage.sol\":{\"keccak256\":\"0x1b157416a77d01fc91beba0d6ef4894ba496a93bb895017bf15858c7e89141aa\",\"urls\":[\"bzz-raw://66eb703cf7483be0d9cdc0145e491bba649d6beda00ecdbcee4c7e1c349bced5\",\"dweb:/ipfs/QmcCn6kGGsXNEWhsncUKcgoNhnm5yTriFDzfPCEmnJV9RV\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5060c68061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c146062575b600080fd5b606060048036036020811015604b57600080fd5b8101908080359060200190929190505050607e565b005b60686088565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea265627a7a723158204db6ef14b82c899e6ceb89bef3a0e8538b6a22b98f77d49c8f05de4fcc4d9d8f64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c146062575b600080fd5b606060048036036020811015604b57600080fd5b8101908080359060200190929190505050607e565b005b60686088565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea265627a7a723158204db6ef14b82c899e6ceb89bef3a0e8538b6a22b98f77d49c8f05de4fcc4d9d8f64736f6c63430005100032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/rodrigo/Documents/storage-lab/consensys-test-project/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/rodrigo/Documents/storage-lab/consensys-test-project/contracts/SimpleStorage.sol\":{\"keccak256\":\"0x1b157416a77d01fc91beba0d6ef4894ba496a93bb895017bf15858c7e89141aa\",\"urls\":[\"bzz-raw://66eb703cf7483be0d9cdc0145e491bba649d6beda00ecdbcee4c7e1c349bced5\",\"dweb:/ipfs/QmcCn6kGGsXNEWhsncUKcgoNhnm5yTriFDzfPCEmnJV9RV\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060c68061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c146062575b600080fd5b606060048036036020811015604b57600080fd5b8101908080359060200190929190505050607e565b005b60686088565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea265627a7a7231582009bcb6711555963ce74d3517f4310b51ef88aaf8e20118039df6565b89ad518a64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c806360fe47b11460375780636d4ce63c146062575b600080fd5b606060048036036020811015604b57600080fd5b8101908080359060200190929190505050607e565b005b60686088565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea265627a7a7231582009bcb6711555963ce74d3517f4310b51ef88aaf8e20118039df6565b89ad518a64736f6c63430005100032",
   "sourceMap": "26:203:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:203:1;;;;;;;",
   "deployedSourceMap": "26:203:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:203:1;;;;;;;;;;;;;;;;;;;;;;;;80:62;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;80:62:1;;;;;;;;;;;;;;;;;:::i;:::-;;148:79;;;:::i;:::-;;;;;;;;;;;;;;;;;;;80:62;134:1;121:10;:14;;;;80:62;:::o;148:79::-;184:7;210:10;;203:17;;148:79;:::o",
   "source": "pragma solidity >=0.5.8;\n\ncontract SimpleStorage {\n    uint256 storedData;\n\n    function set(uint256 x) public {\n        storedData = x;\n    }\n\n    function get() public view returns (uint256) {\n        return storedData;\n    }\n}",
-  "sourcePath": "/home/rodrigo/Documents/truffle-projects/consensys-test-project/contracts/SimpleStorage.sol",
+  "sourcePath": "/home/rodrigo/Documents/storage-lab/consensys-test-project/contracts/SimpleStorage.sol",
   "ast": {
-    "absolutePath": "/home/rodrigo/Documents/truffle-projects/consensys-test-project/contracts/SimpleStorage.sol",
+    "absolutePath": "/home/rodrigo/Documents/storage-lab/consensys-test-project/contracts/SimpleStorage.sol",
     "exportedSymbols": {
       "SimpleStorage": [
         55
@@ -292,7 +292,7 @@
     "src": "0:229:1"
   },
   "legacyAST": {
-    "absolutePath": "/home/rodrigo/Documents/truffle-projects/consensys-test-project/contracts/SimpleStorage.sol",
+    "absolutePath": "/home/rodrigo/Documents/storage-lab/consensys-test-project/contracts/SimpleStorage.sol",
     "exportedSymbols": {
       "SimpleStorage": [
         55
@@ -548,6 +548,12 @@
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0x32faA7a3c1eaEF2Ce8eb14Dbbf3A6920af394535",
+      "transactionHash": "0x02640d9ff77b7b06e7e3789b773ba48a96be0b45fb5db54fb6dcc8ae273b3c7c"
+    },
     "1601408291389": {
       "events": {},
       "links": {},
@@ -556,7 +562,7 @@
     }
   },
   "schemaVersion": "3.2.5",
-  "updatedAt": "2020-09-29T19:55:08.090Z",
+  "updatedAt": "2020-09-30T03:47:36.304Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
